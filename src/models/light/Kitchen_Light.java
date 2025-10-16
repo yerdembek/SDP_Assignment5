@@ -15,6 +15,6 @@ public class Kitchen_Light implements Light {
 
     @Override
     public String toString() {
-        return "Bathroom_Light has a power of light";
+        return "Kitche light has nit a power of light";
     }
 }

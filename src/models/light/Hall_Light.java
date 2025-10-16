@@ -25,6 +25,7 @@ public class Hall_Light implements Light {
                 "2. dark" +
                 "3. cinema" +
                 "4. sunshine" +
-                "5. disco";
+                "5. disco" +
+                "now mod is: " + mode;
     }
 }
