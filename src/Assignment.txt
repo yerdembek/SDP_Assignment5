@@ -1,0 +1,52 @@
+                Smart Home Automation with Decorator + Facade
+
+You are tasked with developing a Smart Home Automation System that
+controls multiple devices (Lights, Thermostat, Security Cameras, Music System).
+The system must be flexible, extensible, and user-friendly, so you must use the
+Decorator and Facade design patterns together.
+
+Requirements:
+    1. Device Abstraction
+        1. Define a common Device interface with a method like operate().
+        2. Implement concrete devices: Light, MusicSystem, Thermostat,
+           SecurityCamera.
+        3. Each device should have its basic functionality (e.g., a Light can turn
+           on/off, a Music System can play music).
+
+    2. Decorator Pattern (Dynamic Features)
+        1. Users want to enhance devices without modifying the original classes.
+        2. Implement decorators that add extra behaviors at runtime:
+            ■ VoiceControlDecorator → Adds voice command support.
+            ■ EnergySavingDecorator → Optimizes power consumption.
+            ■ RemoteAccessDecorator → Allows remote control over the
+              internet.
+        3. Example:
+            ■ A Light can be wrapped with VoiceControlDecorator and
+              EnergySavingDecorator.
+            ■ A MusicSystem can be wrapped with RemoteAccessDecorator + EnergySavingDecorator.
+        4. Multiple decorators should be stackable in any combination.
+
+    3. Facade Pattern (High-Level User Control)
+        1. Users don’t want to configure every device separately.
+        2. Create a HomeAutomationFacade class that provides simplified commands:
+        3. activateNightMode() → Turns off lights, sets thermostat to eco mode,
+           enables security cameras.
+        4. startPartyMode() → Turns on lights with dim effect, plays music at
+           high volume.
+        5. leaveHome() → Turns off all devices, enables security system.
+        6. Internally, the facade must coordinate multiple devices, possibly
+           already wrapped with decorators.
+
+    4. System Demonstration (main method)
+        1. Instantiate devices.
+        2. Dynamically wrap them with decorators to add features.
+        3. Pass the decorated devices to the HomeAutomationFacade.
+        4. Demonstrate calling startPartyMode(), activateNightMode(), and
+           leaveHome() to show how the system manages all devices seamlessly.
+
+Core Challenge:
+    1. Correctly implement Decorator to allow dynamic feature extension.
+    2. Correctly implement Facade to hide complexity and provide high-level
+       commands.
+    3. Ensure that the system is extensible, so new devices or decorators can be
+       added without breaking existing code.
