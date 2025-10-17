@@ -1,0 +1,4 @@
+package decorators.music_system_remote;
+
+public class Music_Outside_RemoteAccessDecorator extends Music_RemoteAccessDecorator{
+}

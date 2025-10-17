@@ -1,0 +1,4 @@
+package decorators.thermostat_energy_saving;
+
+public class Hall_Thermostat_EnergySavingDecorator extends Thermostat_EnergySavingDecorator {
+}

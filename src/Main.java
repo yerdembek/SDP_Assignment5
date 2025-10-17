@@ -1,10 +1,8 @@
-import fasades.light.Bathroom_Light_Fasade;
-import fasades.light.Hall_Light_Fasade;
-import fasades.light.Light_Fasade;
+import facades.Light_Facade;
 
 public class Main {
     public static void main(String[] args) throws InterruptedException {
-        Light_Fasade light = new Hall_Light_Fasade();
-        light.serve_Light();
+        Light_Facade light = new Light_Facade();
+        light.serve_Hall_Light();
     }
 }

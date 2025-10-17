@@ -1,2 +1,0 @@
-here i will create abstract class Thermostat_EnergySavingDecorator
-then i will create classes Bedroom_Thermostat_EnergySavingDecorator & Hall_Thermostat_EnergySavingDecorator
