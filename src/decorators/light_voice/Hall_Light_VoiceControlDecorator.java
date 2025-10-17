@@ -1,8 +1,7 @@
-package decorators.light;
+package decorators.light_voice;
 
 import models.light.Hall_Light;
 import models.light.Light;
-import org.vosk.Recognizer;
 
 public class Hall_Light_VoiceControlDecorator extends Light_VoiceControlDecorator{
     private final Hall_Light light;
@@ -29,19 +28,19 @@ public class Hall_Light_VoiceControlDecorator extends Light_VoiceControlDecorato
                     result.toLowerCase().contains("off")) {
                 System.out.println(light.turnOff());
 
-            } else if (result.toLowerCase().contains("mode one")) {
+            } else if (result.toLowerCase().contains("one")) {
                 light.changeMode(0);
                 System.out.println(light.toString());
-            } else  if (result.toLowerCase().contains("mode two")) {
+            } else  if (result.toLowerCase().contains("two")) {
                 light.changeMode(1);
                 System.out.println(light.toString());
-            } else  if (result.toLowerCase().contains("mode three")) {
+            } else  if (result.toLowerCase().contains("three")) {
                 light.changeMode(2);
                 System.out.println(light.toString());
-            }  else  if (result.toLowerCase().contains("mode four")) {
+            }  else  if (result.toLowerCase().contains("four")) {
                 light.changeMode(3);
                 System.out.println(light.toString());
-            } else  if (result.toLowerCase().contains("mode five")) {
+            } else  if (result.toLowerCase().contains("five")) {
                 light.changeMode(4);
                 System.out.println(light.toString());
             }

@@ -1,4 +1,4 @@
-package decorators.light;
+package decorators.light_voice;
 
 import javax.sound.sampled.*;
 

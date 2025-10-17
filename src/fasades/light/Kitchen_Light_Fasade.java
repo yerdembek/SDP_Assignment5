@@ -1,7 +1,7 @@
 package fasades.light;
 
-import decorators.light.Kitchen_Light_VoiceControlDecorator;
-import decorators.light.Light_VoiceControlDecorator;
+import decorators.light_voice.Kitchen_Light_VoiceControlDecorator;
+import decorators.light_voice.Light_VoiceControlDecorator;
 import models.light.Kitchen_Light;
 import models.light.Light;
 

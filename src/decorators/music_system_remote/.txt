@@ -1,0 +1,2 @@
+here i will create abstract class Music_RemoteAccessDecorator
+then i will create Music_Inside_RemoteAccessDecorator & Music_Outside_RemoteAccessDecorator

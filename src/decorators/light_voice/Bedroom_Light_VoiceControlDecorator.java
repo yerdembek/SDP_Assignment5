@@ -1,8 +1,7 @@
-package decorators.light;
+package decorators.light_voice;
 
 import models.light.Bedroom_Light;
 import models.light.Light;
-import org.vosk.Recognizer;
 
 public class Bedroom_Light_VoiceControlDecorator extends Light_VoiceControlDecorator {
     private final Bedroom_Light light;

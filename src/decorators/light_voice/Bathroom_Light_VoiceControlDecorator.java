@@ -1,11 +1,7 @@
-package decorators.light;
+package decorators.light_voice;
 
 import models.light.Bathroom_Light;
 import models.light.Light;
-import org.vosk.Model;
-import org.vosk.Recognizer;
-
-import javax.sound.sampled.TargetDataLine;
 
 public class Bathroom_Light_VoiceControlDecorator extends Light_VoiceControlDecorator {
     private final Bathroom_Light light;
