@@ -5,12 +5,12 @@ import java.util.*;
 public class Music_Inside implements Music_System {
     Scanner scan = new Scanner(System.in);
     private int volume = 50;
-    private String song;
+    private String song = "disco";
 
 
     @Override
     public void play() {
-        System.out.println("Music_Inside play with volume " + getVolume());
+        System.out.println("Music Inside is " + song +" play with volume " + getVolume());
     }
 
     @Override
@@ -29,9 +29,9 @@ public class Music_Inside implements Music_System {
     }
 
     @Override
-    public void setSong(int mode) {
-        System.out.println("Write the name of song:\n");
-        song = scan.nextLine();
+    public void setSong(String song) {
+        this.song = song;
+        System.out.println("Music_Inside set song " + song);
     }
 
     @Override

@@ -29,9 +29,9 @@ public class Music_Outside implements Music_System{
     }
 
     @Override
-    public void setSong(int mode) {
-        System.out.println("Write the name of song:\n");
-        song = scan.nextLine();
+    public void setSong(String song) {
+        this.song = song;
+        System.out.println("Music_Outside set song " + song);
     }
 
     @Override

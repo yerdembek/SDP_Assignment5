@@ -5,7 +5,7 @@ public interface Music_System {
     public void pause();
     public void changeVolume(int newVolume);
     public int getVolume();
-    public void setSong(int mode);
+    public void setSong(String song);
     public String getSong();
     public String toString();
 }
