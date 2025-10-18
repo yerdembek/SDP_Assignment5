@@ -32,11 +32,11 @@ public class Bathroom_Light_VoiceControlDecorator extends Light_VoiceControlDeco
             } else if (result.toLowerCase().contains("power up")||
                     result.toLowerCase().contains("up")) {
                 System.out.println(light.toString());
-                System.out.println(light.lightControl(20));
+                light.lightControl(20);
             }else if (result.toLowerCase().contains("power down")||
                     result.toLowerCase().contains("down")) {
                 System.out.println(light.toString());
-                System.out.println(light.lightControl(-20));
+                light.lightControl(-20);
             }
         }
     }
